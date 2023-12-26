@@ -4,8 +4,14 @@ import "fmt"
 
 func findDestinationCity(paths [][]string) string {
 	for _, path := range paths {
+		fmt.Println("Path1: ", path)
+		fmt.Println("Path1[0]: ", path[0])
+		fmt.Println("Path1[1]: ", path[1])
 		found := false
 		for _, otherPath := range paths {
+			fmt.Println("Path2: ", path)
+			fmt.Println("OthPath2[0]: ", path[0])
+			fmt.Println("OthPath2[1]: ", path[1])
 			if path[1] == otherPath[0] {
 				found = true
 				break
